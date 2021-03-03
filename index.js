@@ -26,6 +26,11 @@ function reduceToTotal(arr, start = 0){
 }
 
 function reduceToAllTrue(arr){
-    const testing = (currentValue) => currentValue == true;
+    const testing = (currentValue) => currentValue? true:false ;
     return arr.every(testing)
+}
+
+function reduceToAnyTrue(arr){
+    const testing = (currentValue) => currentValue? true:false
+    return arr.some(testing)
 }
